@@ -62,8 +62,8 @@
  'next
  (item (t "Tail Call Optimization"))
  (para #:align 'left 
-  (t "    Don't consume stack space for tail calls.")
-  ;(t "    Just use goto instead.")
+  (t "    Skip creating the activation record.")
+  (t "    Just use goto instead.")
   )
 )
 
