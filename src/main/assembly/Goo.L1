@@ -1,0 +1,15 @@
+(
+ (
+  (eax <- 3)
+  (call :MAKE_A_MILLION)
+  (eax <- (print eax))
+ )
+ (:MAKE_A_MILLION
+  (cjump eax = 9999 :DONE :MORE)
+  :MORE
+  (eax += 2)
+  (call :MAKE_A_MILLION)
+  :DONE
+  (return)
+ )
+)
