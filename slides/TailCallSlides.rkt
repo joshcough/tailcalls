@@ -6,6 +6,10 @@
 (define (large-text txt)
   (text txt (current-main-font) 62))
 
+(define (small-text txt)
+  (text txt (current-main-font) 22))
+
+
 (define (left-align txt) (para #:align 'left txt))
 (define (center-align txt) (para #:align 'center txt))
 
@@ -164,9 +168,9 @@
 (slide 
  (para #:align 'center (large-text "scalac helps"))
  (blank 50)
- (t "scalac automatically converts tail recursion into a while loop*")
+ (t "scalac automatically converts tail recursion into a loop*")
  'next
- (t "* in most situations (I'll explain)")
+ (t "* in some situations (I'll explain)")
  )
 
 (slide 
@@ -362,11 +366,25 @@
  )
 
 
-#;(slide
+(slide
  (para #:align 'center (large-text "References"))
  (blank 50)
- (item (t "http://projectfortress.sun.com/Projects/Community/blog/ObjectOrientedTailRecursion"))
-)
+ (para #:align 'left
+ (item (small-text "Lambda: the ultimate goto"))
+ (subitem (small-text "http://repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-443.pdf"))
+ (item (small-text "Fortress Blog - ObjectOrientedTailRecursion"))
+ (subitem (small-text "http://tinyurl.com/yjbgks3"))
+ (item (small-text "Jack Cough On Software - Tail Calls, Tail Recursion, TCO"))
+ (subitem (small-text "http://jackcoughonsoftware.blogspot.com/2011/07/tail-calls-tail-recursion-tco.html"))
+ (item (small-text "Rich Dougherty - Tail Calls, Tail Rec, Trampolines"))
+ (subitem (small-text "http://blog.richdougherty.com/2009/04/tail-calls-tailrec-and-trampolines.html"))
+ (item (small-text "John Rose - Tail Calls in the JVM"))
+ (subitem (small-text "http://blogs.oracle.com/jrose/entry/tail_calls_in_the_vm"))
+ (item (small-text "Matthias Felleisen - A Tail-Recursive Machine with Stack Inspection"))
+ (subitem (small-text "http://www.ccs.neu.edu/scheme/pubs/cf-toplas04.pdf"))
+ (item (small-text "Stack Overflow - @tailrec and non-final methods"))
+ (subitem (small-text "   http://bit.ly/stacko-tailrec"))
+))
 
 ;;;;;;;;;; OLD JUNK WORTH SAVING FOR REFERENCE ;;;;;;;;;;
 
