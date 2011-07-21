@@ -37,6 +37,10 @@
  (para #:align 'center (large-text "Tail Calls"))
  (blank 50)
  (vc-append 0 (t "Josh Cough"))
+ (vc-append 0 (t "Northwestern University"))
+ (tt "")
+ (vc-append 0 (t "http://jackcoughonsoftware.blogspot.com/"))
+ (vc-append 0 (t "https://github.com/joshcough"))
 )
 
 (slide
