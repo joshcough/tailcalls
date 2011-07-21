@@ -63,7 +63,7 @@
   (t "    another function, and return that functions result.")
   )
  'next
-  (item (t "Tail Recursion"))
+  (item (t "Direct Tail Recursion"))
  (para #:align 'left 
   (t "    Tail call, but with callee == caller.")
   )
@@ -339,7 +339,7 @@
  (tt "}")))
 
 (slide 
- (para #:align 'center (large-text "Mutually Recursive Tail Call"))
+ (para #:align 'center (large-text "Indirect Recursive Tail Call"))
  (blank 50)
  (vl-append
     (tt "def even(n:Int): Boolean =")
