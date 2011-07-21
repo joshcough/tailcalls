@@ -172,7 +172,7 @@
 (slide 
  (para #:align 'center (large-text "scalac helps"))
  (blank 50)
- (t "scalac automatically converts tail recursion into a loop*")
+ (t "scalac converts direct tail recursion into a loop*")
  'next
  (t "* in some situations (I'll explain)")
  )
